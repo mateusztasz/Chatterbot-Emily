@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} Chatterbot {% endblock %}</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Emily/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Emily/css/style.css' %}"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+
+
+    <script src="{% static 'Emily/js/jquery.min.js' %}"></script>
+    <script src="{% static 'Emily/js/bootstrap.min.js' %}"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<!-- Navigation Bar -->
+
+
+{% block body %}
+{% endblock %}
+</body>
+</html>

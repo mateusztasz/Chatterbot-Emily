@@ -1,0 +1,11 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- new.aiml -->
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            Good bye!
+        </template>
+    </category>
+
+</aiml>
