@@ -9,6 +9,7 @@ from . import aiml3
 kernel = aiml3.Kernel()
 kernel.learn('Emily/templates/Emily/AIML/std-startup.xml')
 kernel.respond("load aiml b")
+print("Dzien dobry. Przychodnia X. Przy telefonie Emily. W czym moge pomoc?")
 
 
 def index(request):

@@ -1,0 +1,265 @@
+<aiml>
+
+
+
+    <!-- =========== ODMOWA ==============  -->
+
+    <category>
+        <pattern>NIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* NIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>NIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+        <category>
+        <pattern>* NIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+
+
+       <category>
+        <pattern>INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>INNY *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+        <category>
+        <pattern>* INNY *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+       <category>
+        <pattern>MOZE INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>MOZE INNY *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>MOZE * INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* MOZE INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* MOZE * INNY</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>MOZE * INNY *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>NIE PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <!--========================================= -->
+    <!-- =============AKCEPTACJA==============-->
+
+     <!--========================================= -->
+
+      <category>
+        <pattern>OK</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>OK *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* OK</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* OK *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <!--========================================= -->
+
+        <category>
+        <pattern>TAK</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>TAK *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* TAK</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* TAK *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <!--========================================= -->
+
+     <category>
+        <pattern>DOBRZE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>DOBRZE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* DOBRZE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* DOBRZE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <!--========================================= -->
+
+     <category>
+        <pattern>MOZE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>MOZE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* MOZE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* MOZE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <!--========================================= -->
+
+         <category>
+        <pattern>BEDZIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>BEDZIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* BEDZIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* BEDZIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+        <!--========================================= -->
+
+       <category>
+        <pattern>PEWNIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>PEWNIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* PEWNIE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* PEWNIE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+        <!--========================================= -->
+
+      <category>
+        <pattern>SUPER</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>SUPER *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* SUPER</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SUPER *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+            <!--========================================= -->
+
+     <category>
+        <pattern>PASUJE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>PASUJE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+        <category>
+        <pattern>* PASUJE</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+    <category>
+        <pattern>* PASUJE *</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template><srai>TAK PASUJE MI TEN TERMIN</srai></template>
+    </category>
+
+
+
+</aiml>

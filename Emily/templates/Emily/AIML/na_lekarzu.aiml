@@ -1,0 +1,34 @@
+<aiml>
+
+    <category>
+        <pattern>*</pattern>
+        <that> * ANIA DOROTA HANIA </that>
+        <template>
+        <think><set name="imie_lekarza"><star index="1"></star></set></think>
+        <think><set name="lekarz_istnieje">false</set> </think>
+        <condition name = "imie_lekarza" >
+            <li value="Ania"><think> <set name="termin_dzien">czwartek</set></think>
+                              <think>       <set name="termin_godzina">14</set></think>
+                              <think>        <set name="lekarz_istnieje">true</set></think>
+             </li>
+            <li value="Dorota"> <think> <set name="termin_dzien">piatek</set>
+                                     <set name="termin_godzina">15</set>
+                                      <set name="lekarz_istnieje">true</set>
+            </think> </li>
+            <li value="Hania"> <think> <set name="termin_dzien">poniedzialek</set>
+                                        <set name="termin_godzina">20</set>
+                                        <set name="lekarz_istnieje">true</set>
+            </think></li>
+        </condition>
+            <condition name="lekarz_istnieje" value = "true">
+         Swietnie. Najblizszy termin dla tego doktora przypada w <get name="termin_dzien"></get> o godzinie
+                <get name="termin_godzina"></get>. Czy pasuje Ci ten termin?
+        </condition>
+
+            <condition name="lekarz_istnieje" value = "false">
+                Przykro ale takie imie nie istnieje. Wybierz poprawne imie: Ania, Dorota, Hania
+            </condition>
+        </template>
+    </category>
+
+</aiml>

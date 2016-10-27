@@ -1,0 +1,90 @@
+<aiml>
+
+           <!-- ================== PRIORYTET - czas ============================================== -->
+
+
+    <category>
+        <pattern>CZASIE</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CZASIE</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>CZASIE *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CZASIE *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+        <category>
+        <pattern>CZAS</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>CZAS *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CZAS</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CZAS *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA CZASIE</srai></template>
+    </category>
+
+  <!-- ================== PRIORYTET - lekarz ============================================== -->
+
+
+    <category>
+        <pattern>LEKARZU</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LEKARZU</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>LEKARZU *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LEKARZU *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>LEKARZ</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>LEKARZ *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LEKARZ</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LEKARZ *</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>      <template><srai>NA LEKARZU</srai></template>
+    </category>
+
+
+</aiml>

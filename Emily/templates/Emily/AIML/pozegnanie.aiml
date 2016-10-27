@@ -1,0 +1,60 @@
+<aiml>
+
+    <category>
+        <pattern>ZEGNAJ</pattern>        <template>Do widzenia. Dziekuje za rozmowe. Zycze milego dnia.</template>
+    </category>
+
+    <!--========================================= -->
+    <category>
+        <pattern>DO WIDZENIA</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>DO WIDZENIA *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>* DO WIDZENIA</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>DO * WIDZENIA</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>* DO * WIDZENIA</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>DO * WIDZENIA *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>* DO * WIDZENIA *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+
+
+        <!--========================================= -->
+    <category>
+        <pattern>DZIEKUJE</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>* DZIEKUJE</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+        <category>
+        <pattern>DZIEKUJE *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+
+        <category>
+        <pattern>* DZIEKUJE *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+
+    <!--========================================= -->
+    <category>
+        <pattern>ZEGNAM</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+    <category>
+        <pattern>* ZEGNAM</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+        <category>
+        <pattern>ZEGNAM *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+
+        <category>
+        <pattern>* ZEGNAM *</pattern>        <template>      <srai>ZEGNAJ</srai></template>
+    </category>
+</aiml>

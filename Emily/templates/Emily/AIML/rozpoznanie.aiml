@@ -1,0 +1,114 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>POTRZEBUJE POMOCY</pattern>
+        <template> <srai>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</srai></template>
+    </category>
+
+    <category>
+        <pattern>POMOCY</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOCY</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOCA</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOCY *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOCA *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOC</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+     <category>
+        <pattern>POMOC</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>POMOC *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* POMOC *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+
+        <!-- ========              ==========            =========================             ============= -->
+
+    <category>
+        <pattern>CHORY</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CHORY</pattern>   <template>          <srai>CHORY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CHORY *</pattern>   <template>          <srai>CHORY</srai></template>
+    </category>
+
+        <category>
+        <pattern>CHORA</pattern>   <template>          <srai>CHORY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CHORA</pattern>   <template>          <srai>CHORY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* CHORA *</pattern>   <template>          <srai>CHORY</srai></template>
+    </category>
+
+  <!-- ========              ==========            =========================             ============= -->
+
+    <category>
+        <pattern>ZLE SIE CZUJE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>ZLE * CZUJE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>* ZLE * CZUJE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>* ZLE * </pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>ZLE * </pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+        <category>
+            <pattern>* ZLE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>NIEDOBRZE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>* NIEDOBRZE</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>NIEDOBRZE *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+            <pattern>* NIEDOBRZE *</pattern>   <template>          <srai>POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+
+</aiml>

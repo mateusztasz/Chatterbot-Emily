@@ -1,21 +1,24 @@
-{% if AppList %}
-    <h3> Here are all my web applications: </h3>
-    {% for app in AppList %}
-        {% load staticfiles %}
-        <div class="col-sm-4 col-lg-2">
-            <div class="thumbnail">
-                <a href="{% url 'Emily:index' %}">
-                    <img src="http://icons.iconarchive.com/icons/wineass/ios7-redesign/128/Music-icon.png"
-                         class="img-responsive">
+{% extends 'Emily/base.html' %}
+{% block title %}Emily{% endblock %}
+{% load staticfiles %}
 
-                </a>
-                <div class="caption">
-                    <h2>{{ app }}</h2>
+{% block body %}
 
-                </div>
-            </div>
-        </div>
+<div class="container">
+<div class="col-md-6 col-md-offset-3">
+
+        <div class="jumbotron">
+  <h1 class="display-3">Hello</h1>
+  <p class="lead">Emily is a friendly person who can help You.</p>
+  <hr class="my-2">
+  <p></p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'Emily:index' %}" role="button">Start conversation</a>
+  </p>
+</div>
+
+</div>
+</div>
 
 
-    {% endfor %}
-{% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- std-startup.xml -->
+
+    <!-- ============================================================================================ -->
+
+    <category>
+        <pattern>DZIEN DOBRY</pattern>          <template>Dzien dobry!</template>
+    </category>
+
+    <category>
+        <pattern>DZIEN DOBRY *</pattern>        <template>      <srai>DZIEN DOBRY</srai></template>
+    </category>
+
+
+    <!-- ============================================================================================ -->
+
+    <category>
+        <pattern>WITAJ</pattern>                <template>      <srai>DZIEN DOBRY</srai></template>
+    </category>
+
+    <category>
+        <pattern>WITAJ *</pattern>              <template>      <srai>DZIEN DOBRY</srai></template>
+    </category>
+
+    <!-- ============================================================================================ -->
+
+    <category>
+        <pattern>CZESC</pattern>                <template>      <srai>DZIEN DOBRY</srai></template>
+    </category>
+
+    <category>
+        <pattern>CZESC *</pattern>              <template>      <srai>DZIEN DOBRY</srai></template>
+    </category>
+
+</aiml>

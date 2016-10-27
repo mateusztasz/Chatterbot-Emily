@@ -1,0 +1,48 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>GDZIE PRACUJESZ</pattern>
+        <template><random>
+            <li>Siedziba naszej kliniki znajduje sie przy ul. X we Wroclawiu. Wiecej informacji można znalezc na stronie www.x.pl</li>
+            <li>Siedziba naszej kliniki ulokowana jest we Wroclawiu. Aby uzyskac wiecej informacji zapraszam na stronie www.x.pl</li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LOKALIZACJA</pattern>             <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LOKALIZACJA *</pattern>         <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>* LOKALIZACJA</pattern>           <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>SIEDZIBA</pattern>                 <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SIEDZIBA *</pattern>             <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SIEDZIBA</pattern>               <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>* SIEDZIBE</pattern>               <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>GDZIE</pattern>               <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+    <category>
+        <pattern>GDZIE *</pattern>               <template>          <srai>GDZIE PRACUJESZ</srai></template>
+    </category>
+
+</aiml>

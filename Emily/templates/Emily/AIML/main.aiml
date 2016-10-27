@@ -1,0 +1,435 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- main.aiml -->
+
+    <category>
+        <pattern>NIE POTRZEBUJE POMOCY</pattern>
+        <template>
+            Rozumiem. W takim razie dziekuje za rozmowe. Do widzenia.
+        </template>
+    </category>
+
+    <category>
+        <pattern>NIE POTRZEBUJE</pattern>             <template><srai>NIE POTRZEBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>NIE * POMOCY</pattern>             <template><srai>NIE POTREBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* NIE * POMOCY</pattern>             <template><srai>NIE POTREBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* NIE POTRZEBUJE *</pattern>             <template><srai>NIE POTREBUJE POMOCY</srai></template>
+    </category>
+
+    <category>
+        <pattern>* NIE POTRZEBUJE </pattern>             <template><srai>NIE POTREBUJE POMOCY</srai></template>
+    </category>
+
+    <!-- ============================================================================================ -->
+
+    <category>
+        <pattern>UMOWIC WIZYTE</pattern>
+        <template>
+            Rozumiem, do jakiego lekarza chcesz sie umowic?
+        </template>
+    </category>
+
+    <category>
+        <pattern>* UMOWIC</pattern>             <template><srai>UMOWIC WIZYTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>UMOWIC * </pattern>             <template><srai>UMOWIC WIZYTE</srai></template>
+    </category>
+
+    <category>
+        <pattern>* UMOWIC * </pattern>             <template><srai>UMOWIC WIZYTE</srai></template>
+    </category>
+
+
+    <category>
+        <pattern>DO *</pattern>
+        <that>* DERMATOLOG i OKULISTA</that>
+        <template><srai>DO <star/></srai></template>
+    </category>
+        <category>
+        <pattern>* DO *</pattern>
+        <that>* DERMATOLOG i OKULISTA.</that>
+        <template><srai>DO <star index="2"/></srai></template>
+    </category>
+
+    <category>
+      <pattern>DO * MOGE</pattern>
+      <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>
+      <template>Oto lista lekarzy ktorzy pracuja w naszej placowce: chirurg, pediatra, dentysta, ortodonta, internista,
+          ginekolog, dermatolog i okulista.
+              </template>
+    </category>
+
+    <category>
+      <pattern>* DO * MOGE *</pattern>
+      <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>
+        <template><srai>DO KOGO MOGE</srai></template>
+    </category>
+
+     <category>
+      <pattern>DO * MOGE *</pattern>
+      <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>
+        <template><srai>DO KOGO MOGE</srai> </template>
+    </category>
+
+    <category>
+      <pattern>DO *</pattern>
+      <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>
+      <template>
+          <think><set name = "dostepnosc">false</set></think>
+          <think><set name = "lekarz"><star index = "1"/></set></think>
+
+          <condition name = "lekarz" >
+          <li value = "chirurga"  >         <think><set name = "lekarz_name">chirurg</set></think>
+                                          <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "chirurg"  >         <think><set name = "lekarz_name">chirurg</set></think>
+                                          <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "dentysty">         <think><set name = "lekarz_name">dentysta</set></think>
+                                          <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "dentysta">         <think><set name = "lekarz_name">dentysta</set></think>
+                                          <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "pediatry">        <think><set name = "lekarz_name">pediatra</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "pediatra">        <think><set name = "lekarz_name">pediatra</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "ortodonty">       <think><set name = "lekarz_name">ortodonta</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "ortodonta">       <think><set name = "lekarz_name">ortodonta</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "internisty">      <think><set name = "lekarz_name">internista</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "internista">      <think><set name = "lekarz_name">internista</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "ginekologa">      <think><set name = "lekarz_name">ginekolog</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "ginekolog">       <think><set name = "lekarz_name">ginekolog</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value = "dermatologa">     <think><set name = "lekarz_name">dermatolog</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value = "dermatolog">     <think><set name = "lekarz_name">dermatolog</set></think>
+                                         <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          <li value  = "okulisty">      <think><set name = "lekarz_name">okulista</set></think>
+                                        <think><set name = "dostepnosc">true</set></think>
+          </li>
+          <li value  = "okulista">      <think><set name = "lekarz_name">okulista</set></think>
+                                        <think><set name = "dostepnosc">true</set></think>
+          </li>
+
+          </condition>
+
+          <condition name = "dostepnosc" value = "true">
+              Sukces! Lekarz <get name = "lekarz_name"></get> pracuje w naszej przychodni!
+              Na czym bardziej Ci zależy? Na czasie czy na konkretnym lekarzu?
+          </condition>
+
+          <condition name = "dostepnosc" value = "false">
+          Przykro mi, ale taki lekarz nie pracuje w naszej przychodni! Okresl jeszcze raz do jakiego lekarza chcesz sie umowic.
+          </condition>
+      </template>
+
+   </category>
+
+
+ <category>
+        <pattern>* DO *</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+     <category>
+        <pattern>* DO *</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star/></srai></template>
+    </category>
+
+
+
+    <category>
+        <pattern>DO * POPROSZE</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star index = "1"/></srai></template>
+    </category>
+     <category>
+        <pattern>* DO * POPROSZE</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+     <category>
+        <pattern>* DO * POPROSZE *</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>ROZUMIEM DO JAKIEGO LEKARZA CHCESZ SIE UMOWIC</that>      <template>      <srai>DO <star/></srai></template>
+    </category>
+
+
+
+
+     <category>
+        <pattern>* DO *</pattern>
+        <that>I OKULISTA</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+     <category>
+        <pattern>* DO *</pattern>
+        <that>I OKULISTA</that>      <template>      <srai>DO <star index = "2"/></srai></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>I OKULISTA</that>      <template>      <srai>DO <star/></srai></template>
+    </category>
+
+
+
+
+        <!-- ================== ============================================== -->
+
+
+    <category>
+        <pattern>NA CZASIE</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>
+        <template>
+            Dobrze, wybierz termin ktory Ci najbardziej pasuje.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WE * O *</pattern>
+        <that> * TERMIN KTORY CI * PASUJE </that>
+        <template>
+        <think><set name="termin_dzien"><star index="1"></star></set></think>
+        <think><set name="termin_pora"><star index="2"></star></set></think>
+        <think><set name="lekarz_istnieje2">false</set> </think>
+        <condition name = "termin_dzien" >
+            <li value="poniedzialek"> <think><set name="lekarz_name">Jurek</set> <set name="lekarz_istnieje2">true</set> </think> </li>
+            <li value="wtorek"> <think><set name="lekarz_name">Grzgorz</set><set name="lekarz_istnieje2">true</set> </think> </li>
+            <li value="sroda"> <think><set name="lekarz_name">Kinga</set><set name="lekarz_istnieje2">true</set> </think> </li>
+            <li value="czwartek"> <think><set name="lekarz_name">Daria</set><set name="lekarz_istnieje2">true</set> </think> </li>
+            <li value="piatek"> <think><set name="lekarz_name">Ala</set><set name="lekarz_istnieje2">true</set> </think> </li>
+    </condition>
+            <condition name="lekarz_istnieje2" value="true">
+Swietnie. Lekarz <get name="lekarz_name"></get> ma wolne miejsce dla Ciebie w <get name="termin_dzien"></get> o
+                <get name="termin_pora"></get>.
+            </condition>
+
+            <condition name="lekarz_istnieje2" value="false">
+                Przykro mi. W dniu <get name="termin_dzien"></get> nie przyjmuje zadnen z lekarzy. Wybierz ponownie termin ktory Ci pasuje.
+            </condition>
+
+    </template>
+    </category>
+
+    <category>
+        <pattern>W * O *</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> <srai>WE <star index="1"></star> O <star index="2"></star> </srai> </template>
+    </category>
+
+    <category>
+        <pattern> * O *</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> <srai>WE <star index="1"></star> O <star index="2"></star> </srai> </template>
+    </category>
+
+        <category>
+        <pattern>NAJSZYBCIEJ</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> Najblizszy termin to dzis o 12.
+                <think><set name="termin_dzien">dzis</set></think>
+            <think><set name="termin_godzina">12</set></think>
+    </template>
+    </category>
+     <category>
+        <pattern>* NAJSZYBCIEJ</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> Najblizszy termin to dzis o 12.
+                <think><set name="termin_dzien">dzis</set></think>
+            <think><set name="termin_godzina">12</set></think>
+    </template>
+    </category>
+     <category>
+        <pattern>NAJSZYBCIEJ *</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> Najblizszy termin to dzis o 12.
+                <think><set name="termin_dzien">dzis</set></think>
+            <think><set name="termin_godzina">12</set></think></template>
+    </category>
+     <category>
+        <pattern>* NAJSZYBCIEJ *</pattern>
+         <that> * TERMIN KTORY CI * PASUJE </that>
+    <template> Najblizszy termin to dzis o 12.
+                <think><set name="termin_dzien">dzis</set></think>
+            <think><set name="termin_godzina">12</set></think></template>
+    </category>
+
+
+
+
+
+    <category>
+        <pattern>NA LEKARZU</pattern>
+        <that>* NA CZASIE CZY NA KONKRETNYM LEKARZU</that>
+        <template>
+        Dobrze, w takim razie wybierz sobie prosze
+                                lekarza sposrod dostepnych: Ania, Dorota, Hania</template>
+    </category>
+
+
+    <category>
+        <pattern>NIE</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Niestety doktor przyjmuje tylko w <get name="termin_dzien"></get>. Ewentualny termin
+                                                    to tydzien pozniej. Moze byc?</template>
+    </category>
+
+        <category>
+        <pattern>* NIE</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Niestety doktor przyjmuje tylko w <get name="termin_dzien"></get>. Ewentualny termin
+                                                    to tydzien pozniej. Moze byc?</template>
+    </category>
+
+        <category>
+        <pattern>NIE *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Niestety doktor przyjmuje tylko w <get name="termin_dzien"></get>. Ewentualny termin
+                                                    to tydzien pozniej. Moze byc?</template>
+    </category>
+
+        <category>
+        <pattern>* NIE *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Niestety doktor przyjmuje tylko w <get name="termin_dzien"></get>. Ewentualny termin
+                                                    to tydzien pozniej. Moze byc?</template>
+    </category>
+
+
+    <category>
+        <pattern>TAK PASUJE MI TEN TERMIN</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template>Ok w takim razie rezerwuje termin na przyszly
+        <get name="termin_dzien"></get> na godzine <get name="termin_godzina"></get> .
+    </template>
+    </category>
+
+ <category>
+        <pattern>NIE PASUJE MI TEN TERMIN</pattern>
+        <that>* TO TYDZIEN POZNIEJ MOZE BYC </that>     <template>Terminarz ponad tydzien nie jest rozpisany.
+     Sprobuj z innym lekarzem. Kogo wybierasz sposrod dostepnych: Ania, Dorota, Hania.
+    </template>
+    </category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <category>
+        <pattern>TAK</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+    <category>
+        <pattern>* TAK</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+        <category>
+        <pattern>TAK *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+    <category>
+        <pattern>* TAK *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+
+
+
+
+    <category>
+        <pattern>SUPER</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+    <category>
+        <pattern>* SUPER</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+        <category>
+        <pattern>SUPER *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+    <category>
+        <pattern>* SUPER *</pattern>
+        <that>* CZY PASUJE CI TEN TERMIN </that>     <template>Swietnie. W takim razie jestes umowiny do lekarza
+                                                                <get name="imie_lekarza"/> na <get name="termin_dzien"/>
+                                                                o godzinie <get name="termin_godzina"/> </template>
+    </category>
+
+
+
+
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        Nie rozumiem Cie. Sprobuj sformulowac zdanie troche inaczej.
+    </template>
+</category>
+
+</aiml>
